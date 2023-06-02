@@ -106,3 +106,4 @@ At this point you will need to add a custom IP to the project which will be your
 - add all files from the `vhdl/src/` folder as sources 
 - at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs
 - once you have added all IPs you can modify the vhdl file to include 
+qualcosa
