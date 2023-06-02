@@ -25,7 +25,11 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   > sudo apt install git
 - clone the pynq project repository to your local machine 
   > git clone https://github.com/Xilinx/PYNQ.git
-- move to the boards folder in the newly created 
+- move to the boards/pynq_z2/base folder in the newly created PYNQ folder and run the make command  
+  > cd PYNQ/boards/pynq_z2/base
+  > source <**your vivado install dir**>/settings64.sh
+  > make
+-
 <br>
 
 ## creating the hardware project
