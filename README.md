@@ -1,0 +1,1 @@
+# embedded-LINUX-crypto-core
