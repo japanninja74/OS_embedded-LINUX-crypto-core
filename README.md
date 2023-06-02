@@ -17,8 +17,9 @@ In order to insure compatibility the following steps are required:
 
 ## The pynq-z2 BSP
 In order to create a petalinux project we first need a BSP.  
-The BSP for the pynq board is not provided by the board maker but you can create it using petalinux from the [pynq project](https://github.com/xilinx/pynq).
-In order to save time, a version of the bsp can be located in the BSP folder. This version only works with petalinux 2022.1.
+The BSP for the pynq board is not provided by the board maker but you can create it using petalinux from the [pynq project](https://github.com/xilinx/pynq).  
+In order to save time, a version of the bsp can be located in the BSP folder. This version only works with petalinux 2022.1.  
+
 
 ## creating the hardware project
 In the vhdl folder you can find everything you need to use the crypto core. There you will also find a readme file with the steps needed to instantiate all the required IPs.  
