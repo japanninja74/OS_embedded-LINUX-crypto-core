@@ -11,10 +11,12 @@ In order to insure compatibility the following steps are required:
   - make sure you read the petalinux installation requirements carefully, expecially the free space requirement and the `bin/sh` shell requirement.  
   - make sure to install the required packages referenced in the excel file located in the [petalinux release notes webpage](https://support.xilinx.com/s/article/000033799?language=en_US) **for your installed version**.  
 <br>
+
 ## Installing the software
 -download and install the required version of vitis and vivado from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html).
 -download and install the required version of petalinux from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2022-1.html).  
 <br>
+
 ## Laboratory experience flow
 - you will first need to either build your own or download the BSP
 - once you have the BSP you will need to create the custom hardware platform in vivado using the provided VHDL files
