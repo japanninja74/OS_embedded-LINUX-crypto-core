@@ -14,6 +14,7 @@ In order to insure compatibility the following steps are required:
   - download and install the petalinux software from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2022-1.html).  
   - make sure to install the required packages referenced in the excel file located in the [petalinux release notes webpage](https://support.xilinx.com/s/article/000033799?language=en_US) **for your installed version**.  
 <br>
+
 ## The pynq-z2 BSP
 In order to create a petalinux project we first need a BSP.  
 The BSP for the pynq board is not provided by the board maker but you can create it using petalinux from the [pynq project](https://github.com/xilinx/pynq).
