@@ -13,11 +13,12 @@ In order to insure compatibility the following steps are required:
 <br>
 
 ## Installing the software
--download and install the required version of vitis and vivado from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html).
--download and install the required version of petalinux from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2022-1.html).  
+- download and install the required version of vitis and vivado from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html).
+- download and install the required version of petalinux from the [xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2022-1.html).  
 <br>
 
 ## Laboratory experience flow
+
 - you will first need to either build your own or download the BSP
 - once you have the BSP you will need to create the custom hardware platform in vivado using the provided VHDL files
 - after exporting the hardware platform, you will need to test the hardware in baremetal using vitis
@@ -26,7 +27,7 @@ In order to insure compatibility the following steps are required:
 - once you are done building you will need to package the boot components and load them into an sd card
 - after booting from the sd card and making sure that the linux image works correctly, you will be asked to create a custom linux driver
 - you will then be walked through the steps required to load the driver and test it using a custom user application
-
+<br>
 
 # The pynq-z2 BSP
 In order to create a petalinux project we first need a BSP.  
