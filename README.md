@@ -105,4 +105,7 @@ At this point you will need to add a custom IP to the project which will be your
 - select `edit ip` and then `finish`
 - add all files from the `vhdl/src/` folder as sources 
 - at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs
-- once you have added all IPs you can modify the vhdl file to include 
+- once you have added all IPs you can modify the vhdl file to include the core 
+- connect the core to the registers
+  - the details of how to modify the IP to add the core can be found in the . folder
+- 
