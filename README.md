@@ -32,7 +32,7 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   ```
 - move to the `boards/pynq_z2/base` folder in the newly created PYNQ folder.  
   ```console
-  cd PYNQ/boards/pynq_z2/base/
+  cd PYNQ/boards/Pynq-Z2/base/
   ```
 - source the vivado enviroment variables. Replace `<your vivado install dir>` with the installion directory of the vivado tool  
   ```console
@@ -59,8 +59,15 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   ```
 - run the `petalinux-config` command specifing the hardware platform
   ```console
-  petalinux-config --get-hw-description ../PYNQ/boards/pynq_z2/base/base.xsa
+  petalinux-config --get-hw-description ../PYNQ/boards/Pynq-Z2/base/base.xsa
   ```
+  - this will open a configuration tab. You don't need to modify anything at this stage so you can close and save by navigating to the `<exit>` option.
+- run the `petalinux-package` command to package the BSP
+  ```console
+  petalinux-package --bsp -p ../PYNQ_Z2 --output pynq_z2_bsp
+  ```
+- you have successfully created your bsp which can be found in the project directory.  
+
 <br>
 
 ## creating the hardware project
