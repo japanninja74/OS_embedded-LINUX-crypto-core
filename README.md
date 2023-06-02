@@ -21,6 +21,7 @@ The BSP for the pynq board is not provided by the board maker but you can create
 In order to save time, a version of the bsp can be downloaded [here](https://mega.nz/file/NHNHzTYB#UCP6dy67P80xzV5r_mvvZvwBLSUyGVFZmOuWuZBe2bQ). This version only works with petalinux 2022.1.  
 
 ### Creating the BSP from scratch  
+- open a new terminal on your desktop
 - install the git application 
   ```console
   sudo apt install git
@@ -31,9 +32,9 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   ```
 - move to the `boards/pynq_z2/base` folder in the newly created PYNQ folder.  
   ```console
-  cd PYNQ/boards/pynq_z2/base
+  cd PYNQ/boards/pynq_z2/base/
   ```
-- source the vivado enviroment variables. Replace `<your vivado install dir>` with the install directory of the vivado tool  
+- source the vivado enviroment variables. Replace `<your vivado install dir>` with the installion directory of the vivado tool  
   ```console
   source <your vivado install dir>/settings64.sh
   ```
@@ -41,8 +42,25 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   ```console
   make
   ```
-  - note that this may take a **very long time**, just let it run.
--
+  - please note that this may take a **very long time**, just let it run.
+- once the program finishes you can close the terminal.
+- open a new terminal in the desktop
+- source the petalinux enviroment variables. Replace `<your petalinux install dir>` with the installion directory of the petalinux tool
+  ```console
+  source <your petalinux install dir>/settings.sh
+  ```
+- create a new project from template
+  ```console 
+  petalinux-create --type project --template zynq --name PYNQ_Z2
+  ```
+- move to the newly created folder
+  ```console
+  cd PYNQ_Z2/
+  ```
+- run the `petalinux-config` command specifing the hardware platform
+  ```console
+  petalinux-config --get-hw-description ../PYNQ/boards/pynq_z2/base/base.xsa
+  ```
 <br>
 
 ## creating the hardware project
