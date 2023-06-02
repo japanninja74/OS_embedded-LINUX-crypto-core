@@ -81,19 +81,28 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   petalinux-package --bsp -p ../PYNQ_Z2 --output pynq_z2_bsp
   ```
 - you have successfully created your bsp which can be found in the project directory.  
-
 <br>
 
 # Creating the hardware platform
 In the vhdl folder you can find everything you need to use the crypto core. There you will also find a readme file with the steps needed to instantiate all the required IPs.  
+  
 - open vivado and create a new project 
 - when promped to add sources, leave it empty but make sure to select the target language as vhdl
-- when promped to select the default xilinx part go to boards and select the pynq-z2 board by tul.com
-  - if you don't have the pynq-z2 board as a choice click on `refresh` and download the board
+- when promped to select the default xilinx part go to `boards` and select the pynq-z2 board by tul.com
+  - if you don't have the pynq-z2 board as a choice click on `refresh` and download the board  
+
+At this point you will need to add a custom IP to the project which will be your core. If you wish you can add the pre-packaged IP located in the `ip/` folder or you can create your own from scratch.
+
+## Adding the pre-made IP
+- open the ip catalog
+- right click and select `add repository`
+- select the `ip/` folder
+
+## Creating the IP from scratch
 - go to `tools>create and package new ip`
-- select next, select "create a new AXI4 peripheral"
+- select next, select `create a new AXI4 peripheral`
 - when promped to specify the AXI proprieties, change the number of registers to 5
-- select `edit ip` and then finish
-- add all files from the `vhdl/src` folder as sources 
-- at this point you can follow the instructions in the readme located in the `vhdl/` folder to add all the required IPs
-- 
+- select `edit ip` and then `finish`
+- add all files from the `vhdl/src/` folder as sources 
+- at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs
+- once you have added all IPs you can modify the vhdl file to include 
