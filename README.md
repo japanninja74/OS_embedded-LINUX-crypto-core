@@ -5,5 +5,5 @@ In this repo you can find everything needed to complete the laboratory experienc
 <br>
 # GETTING STARTED
 ## pre-requisites
-In order to insure compatibility the following steps are required:
-check the vivado version used by the pynq project, at the time of writing the compatible version is the 2022.1 but this could change in the future.
+In order to insure compatibility the following steps are required:  
+check the vivado version used by the [pynq project](https://github.com/xilinx/pynq), at the time of writing the compatible version is the 2022.1 but this could change in the future.  
