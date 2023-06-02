@@ -18,7 +18,11 @@ In order to insure compatibility the following steps are required:
 ## The pynq-z2 BSP
 In order to create a petalinux project we first need a BSP.  
 The BSP for the pynq board is not provided by the board maker but you can create it using petalinux from the [pynq project](https://github.com/xilinx/pynq).  
-In order to save time, a version of the bsp can be located in the BSP folder. This version only works with petalinux 2022.1.  
+In order to save time, a version of the bsp can be downloaded [here](https://mega.nz/file/NHNHzTYB#UCP6dy67P80xzV5r_mvvZvwBLSUyGVFZmOuWuZBe2bQ). This version only works with petalinux 2022.1.  
+<br>
+
+## Creating the BSP from scratch  
+
 <br>
 
 ## creating the hardware project
