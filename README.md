@@ -3,6 +3,14 @@
 This repo has been created by group #5 of the OS course.  
 In this repo you can find everything needed to complete the laboratory experience, including the solutions.  
 <br>
+**COLLABORATORS:**
+Giuseppe La Capra  
+Lorenzo Crupi  
+Andrea Comberiati  
+Pietro Furbatto  
+Jessica Marossero  
+Filippo Marostica  
+Fabrizio Cavallone  
 # GETTING STARTED
 ## pre-requisites
 In order to insure compatibility the following steps are required:  
