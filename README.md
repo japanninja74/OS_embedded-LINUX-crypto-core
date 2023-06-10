@@ -119,4 +119,8 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 - at this point all blocks should result connected and some more blocks should have been created, namely the AXI interconnect and the clock/reset control block.
 - click on the block diagram and select `create HDL wrapper`
 - click on . and select `generate bitstream`
-- click on . and select `export hardware platform`
+- click on . and select `export hardware platform`  
+# Testing the hardware platform in baremetal
+# Creating the petalinux project
+# Adding custom modules and applications
+# Building, Packaging and Testing
