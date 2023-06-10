@@ -84,6 +84,8 @@ In order to save time, a version of the bsp can be downloaded [here](https://meg
   petalinux-config --get-hw-description ../PYNQ/boards/Pynq-Z2/base/base.xsa
   ```
   - this will open a configuration tab. You don't need to modify anything at this stage so you can close and save by navigating to the `<exit>` option.
+- at this point you can replace the files located in `PYNQ_Z2/project-spec/metauser/recipes-bsp` with the ones found inside `PYNQ/boards/Pynq-Z2/petalinux_bsp/meta-user/recipes-bsp`.
+  - this step will modify the `system-user.dtsi` file and adds some board specific patches for U-boot.
 - run the `petalinux-package` command to package the BSP
   ```console
   petalinux-package --bsp -p ../PYNQ_Z2 --output pynq_z2_bsp
