@@ -1,7 +1,8 @@
 # embedded-LINUX-crypto-core
 ## introduction
 This repo has been created by group #5 of the OS course.  
-In this repo you can find everything needed to complete the laboratory experience, including the solutions.  
+This repo describes the complete workflow in order to get an embedded system working on the Pynq Z2, starting from complete scratch.  
+The flow is organized as a laboratory experience where you'll learn how to create,package and finally boot an embedded linux image that supports a custom hardware application.  
 <br>
 **COLLABORATORS:**  
 Giuseppe La Capra  
@@ -26,7 +27,6 @@ In order to insure compatibility the following steps are required:
 <br>
 
 ## Laboratory experience flow
-
 - you will first need to either build your own or download the BSP
 - once you have the BSP you will need to create the custom hardware platform in vivado using the provided VHDL files
 - after exporting the hardware platform, you will need to test the hardware in baremetal using vitis
