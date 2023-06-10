@@ -109,18 +109,7 @@ At this point you will need to add a custom IP to the IP Catalog which will be y
 - select the `ip/pre_packaged` folder
 
 ## Creating the IP from scratch
-creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.
-- go to `tools>create and package new ip`
-- select next, select `create a new AXI4 peripheral`
-- name it `crypto_core`
-- when promped to specify the AXI proprieties, change the number of registers to 5
-- select `edit ip` and then `finish`
-- add all files from the `vhdl/src/` folder as sources 
-- at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs
-- once you have added all IPs you can modify the vhdl file to include the core 
-- connect the core to the registers
-  - the details of how to modify the IP to add the core can be found in the . folder
-- run a synthesis to save the design and create the netlist  
+creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.  
 
 At this point you should see your IP in the IP Catalong under `user repository`:
 - create a new block diagram
