@@ -122,7 +122,6 @@ creating the IP from scratch is too convoluted to be explained on the main readm
   - the details of how to modify the IP to add the core can be found in the . folder
 - run a synthesis to save the design and create the netlist  
 
-
 At this point you should see your IP in the IP Catalong under `user repository`:
 - create a new block diagram
 - add the `zynq7000` IP by selecting the `+` icon
