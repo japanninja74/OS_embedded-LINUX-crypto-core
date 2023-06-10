@@ -101,14 +101,15 @@ In the vhdl folder you can find everything you need to use the crypto core. Ther
 - when promped to select the default xilinx part go to `boards` and select the pynq-z2 board by tul.com
   - if you don't have the pynq-z2 board as a choice click on `refresh` and download the board  
 
-At this point you will need to add a custom IP to the project which will be your core. If you wish you can add the pre-packaged IP located in the `ip/` folder or you can create your own from scratch.
+At this point you will need to add a custom IP to the IP Catalog which will be your HW core. If you wish you can add the pre-packaged IP located in the `ip/` folder or you can create your own from scratch:
 
 ## Adding the pre-made IP
 - open the ip catalog
 - right click and select `add repository`
-- select the `ip/` folder
+- select the `ip/pre_packaged` folder
 
 ## Creating the IP from scratch
+creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.
 - go to `tools>create and package new ip`
 - select next, select `create a new AXI4 peripheral`
 - name it `crypto_core`
@@ -119,5 +120,15 @@ At this point you will need to add a custom IP to the project which will be your
 - once you have added all IPs you can modify the vhdl file to include the core 
 - connect the core to the registers
   - the details of how to modify the IP to add the core can be found in the . folder
-- run a synthesis to save the design and create the netlist
-- 
+- run a synthesis to save the design and create the netlist  
+
+
+At this point you should see your IP in the IP Catalong under `user repository`:
+- create a new block diagram
+- add the `zynq7000` IP by selecting the `+` icon
+- add your custom IP the same way
+- an option should appear to run automated connections, click on it
+- at this point all blocks should result connected and some more blocks should have been created, namely the AXI interconnect and the clock/reset control block.
+- click on the block diagram and select `create HDL wrapper`
+- click on . and select `generate bitstream`
+- click on . and select `export hardware platform`
