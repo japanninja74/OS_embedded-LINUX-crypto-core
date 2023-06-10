@@ -109,8 +109,9 @@ At this point you will need to add a custom IP to the IP Catalog which will be y
 - select the `ip/pre_packaged` folder
 
 ## Creating the IP from scratch
-creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.  
+Creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.  
 
+## Packaging the platform
 At this point you should see your IP in the IP Catalong under `user repository`:
 - create a new block diagram
 - add the `zynq7000` IP by selecting the `+` icon
@@ -120,6 +121,7 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 - click on the block diagram and select `create HDL wrapper`
 - click on . and select `generate bitstream`
 - click on . and select `export hardware platform`  
+
 # Testing the hardware platform in baremetal
 # Creating the petalinux project
 # Adding custom modules and applications
