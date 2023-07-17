@@ -130,10 +130,10 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 - press next
 - give the application project a name, select next until you can select finish
 
-At this point you should have a basic hello world project open on vitis.
+At this point you should have a basic hello world project open on vitis.  
 Under the `<name>_system > src` folder you can find the `helloworld.c` program whereas under the `<xsa_file_name> > hw > drivers > <ip_name> > src` you can find
-the .h file that defines some useful read and write macros you should use and the address offsets.
-The base address can be found under `<xsa_file_name> > hw > <xsa_file_name>.xsa`, just scroll to the bottom of the list and you should see the name of your ip with the base address.
+the .h file that defines some useful read and write macros you should use and the address offsets.  
+The base address can be found under `<xsa_file_name> > hw > <xsa_file_name>.xsa`, just scroll to the bottom of the list and you should see the name of your ip with the base address.  
 At this point you have everything you need to create a test application to test the functionality of the hardware.  
 
 When you're done creating the application create a new command shell console:
