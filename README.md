@@ -191,11 +191,19 @@ In order to create a new app or module:
   ```console
   source <your petalinux install dir>/settings.sh
   ```
-- create a new app
+- create a new app:
   ```console 
   petalinux-create -t apps --template c --name <appname> --enable
   ```
   - please only use lower case letters and no `_` in the appname or follow [this](https://docs.xilinx.com/r/2022.1-English/ug1144-petalinux-tools-reference-guide/Recipe-Name-has-_-or-Uppercase-Letters-or-Starts-with-an-Uppercase-Letter) if you do.
-  - 
-In the next few steps you will create apps that are compiled at the build time of the linux image so it's strongly suggested to test if the app compiles using gcc before moving to the next step
+- create a new kernel module:
+  ```console 
+  petalinux-create -t modules --name <modulename> --enable
+  ```
+  - please only use lower case letters and no `_` in the modulename or follow [this](https://docs.xilinx.com/r/2022.1-English/ug1144-petalinux-tools-reference-guide/Recipe-Name-has-_-or-Uppercase-Letters-or-Starts-with-an-Uppercase-Letter) if you do.
+
+You can now find the apps and modules under the `PROGETTO/project-spec/meta-user/recipes-apps` and `PROGETTO/project-spec/meta-user/recipes-modules` directories.  
+Here you can modify the .c file related to the app/module to your liking.  
+NOTE: do not modify the names of the .c files. The apps and modules are compiled during the building of the image; in order to avoid having to build multiple times because of typos and programming mistakes, check if the .c files compile using gcc on your machine.  
+
 # Building, Packaging and Testing
