@@ -146,5 +146,38 @@ Make sure you have turned on the board and that you have unplugged the boot jump
 At this point you can build the application and by clicking on the play icon.
 
 # Creating the petalinux project
+- open a new terminal in the desktop
+- source the petalinux enviroment variables. Replace `<your petalinux install dir>` with the installion directory of the petalinux tool
+  ```console
+  source <your petalinux install dir>/settings.sh
+  ```
+- create a new project from bsp
+  ```console 
+  petalinux-create -t project -s <path-to-bsp> --name PROGETTO
+  ```
+- move to the newly created folder
+  ```console
+  cd PROGETTO/
+  ```
+- run the `petalinux-config` command specifing the .xsa file you created earlier
+  ```console
+  petalinux-config --get-hw-description <path to .xsa file>
+  ```
+  - this will open a configuration tab, do not close this tab because you need to modify the kernel bootargs.
+- navigate to `DTG settings` and press select
+- navigate to the last entry and copy the contents, press ok when you are done
+- navigate to `generate boot args automatically` and press N to remove the selection
+  - this will delete the bootargs that where automatically generated (the ones you copied earlier)
+- navigate to `user set kernel bootargs` and paste the bootargs you copied
+- add `clk_ignore_unused` to the bootargs after the console bootarg
+  - it should look something like this
+    ```console
+    console=ttyPS0,115200 clk_ignore_unused earlycon root=/dev/ram0 rw 
+    ```
+  - this step is needed because normally the linux Common Clock Framework will deactivate unused clocks, including the axi clock, making the hw unusable
+- click ok followed by exit unitil you can exit the configurator
+- make sure you click yes when promped to save and exit.
+- you have successfully created your petalinux project.
+
 # Adding custom modules and applications
 # Building, Packaging and Testing
