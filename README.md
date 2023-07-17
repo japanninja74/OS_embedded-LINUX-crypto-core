@@ -180,4 +180,22 @@ At this point you can build the application and by clicking on the play icon.
 - you have successfully created your petalinux project.
 
 # Adding custom modules and applications
+In order to make the hw usable we will create a custom kernel module (acting as a driver) and a user application (acting as a test application).  
+This two pieces of software will be embedded into the linux image meaning that we will later be able to find them in the filesystem and run them.  
+It is done this way because the linux image does not have any compilers and therefore we cannot compile software on the board.  
+Technically it is possible to cross compile using Vitis and upload the apps using an ethernet connection but we weren't able to make it work.  
+
+In order to create a new app or module:
+- navigate to the project's directory
+- source the petalinux enviroment variables if you haven't done it already
+  ```console
+  source <your petalinux install dir>/settings.sh
+  ```
+- create a new app
+  ```console 
+  petalinux-create -t apps --template c --name <appname> --enable
+  ```
+  - please only use lower case letters and no `_` in the appname or follow [this](https://docs.xilinx.com/r/2022.1-English/ug1144-petalinux-tools-reference-guide/Recipe-Name-has-_-or-Uppercase-Letters-or-Starts-with-an-Uppercase-Letter) if you do.
+  - 
+In the next few steps you will create apps that are compiled at the build time of the linux image so it's strongly suggested to test if the app compiles using gcc before moving to the next step
 # Building, Packaging and Testing
