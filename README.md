@@ -206,4 +206,5 @@ You can now find the apps and modules under the `PROGETTO/project-spec/meta-user
 Here you can modify the .c file related to the app/module to your liking.  
 NOTE: do not modify the names of the .c files. The apps and modules are compiled during the building of the image; in order to avoid having to build multiple times because of typos and programming mistakes, check if the .c files compile using gcc on your machine.  
 
-# Building, Packaging and Testing
+# Building and Packaging
+# Booting and Testing
