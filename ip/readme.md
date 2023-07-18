@@ -29,7 +29,11 @@
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2d19bad0a49f139d057d9d5ee7a8a58d4310d15a/ip/Screenshot%20from%202023-06-04%2001-01-32.png)
   - at this point you might need to change the `type` field under `ip file group proprieties` of the folder `VHDL Simulation` to `simulation` instead of `VHDL:simulation`
 
-    ![]()
+    ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/291966de89f5ba5f61383092b6ec3028edc65840/ip/Screenshot%20from%202023-07-18%2018-42-48.png)
+- at this point you can save the changes by selecting `review and package > re-package IP`
+<br>
+You have successfully created the IP and can now create the core.
+
 - once you have added all IPs you can modify the vhdl file to include the core 
 - connect the core to the registers
   - the details of how to modify the IP to add the core can be found in the . folder
