@@ -1,4 +1,5 @@
 # EX1: Testing the platform on Vitis  
+After setting up the vitis enviroment and creating an helloworld project you can start to modify the program for testing purposes.  
 Under the `<name>_system > src` folder you can find the `helloworld.c` program whereas under the `<xsa_file_name> > hw > drivers > <ip_name> > src` you can find
 the .h file that defines some useful read and write macros you should use and the address offsets.  
 The base address can be found under `<xsa_file_name> > hw > <xsa_file_name>.xsa`, just scroll to the bottom of the list and you should see the name of your ip with the base address.  
@@ -34,8 +35,10 @@ void writel(VALUE, ADDRESS)
 u32 readl(ADDRESS)
 ```
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
-All of these macros are defined in the `Linux/io.h` header file.  
-  
+All of these macros are defined in the `Linux/io.h` header file. 
+<br>
+If you are unsure about the base address, you can find the base address in the Device Tree recipe for the core that can be located in `PROGETTO/components/plnx_workspace/device-tree/pl.dtsi`. This file is created after running `petalinux-build`, the base address is under the `reg` field.  
+<br>
 In the `solutions` directory you can find our implementation. It's important to note that our implementation could not be working with your core because of different base addresses.  
 NOTE: after booting onto the board the driver can be found in `/lib/modules/<directory>/extra/` where `<directory>` is the only directory present in that path, the name is not known.  
 
