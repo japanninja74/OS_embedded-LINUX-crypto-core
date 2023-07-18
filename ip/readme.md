@@ -33,7 +33,7 @@
     ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/291966de89f5ba5f61383092b6ec3028edc65840/ip/Screenshot%20from%202023-07-18%2018-42-48.png)
 - at this point you can save the changes by selecting `review and package > re-package IP`
 <br>
-You have successfully created the IP and can now create the core.
+You have successfully created the IP and can now create the core.  
 ## Creating the Block Diagram
 - once you have added all IPs you can modify the vhdl file to include the core 
 - connect the core to the registers
