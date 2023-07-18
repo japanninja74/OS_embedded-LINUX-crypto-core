@@ -17,7 +17,19 @@
   
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2ae29179fbc2338c1a1c9f0e924a2947ae241cc3/ip/Screenshot%20from%202023-07-18%2017-38-50.png)
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2ae29179fbc2338c1a1c9f0e924a2947ae241cc3/ip/Screenshot%20from%202023-06-04%2001-01-00.png)
-- at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs
+- navigate to `File Groups`, right click on `VHDL Sinthesis` and select `Add Files`
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2d19bad0a49f139d057d9d5ee7a8a58d4310d15a/ip/Screenshot%20from%202023-07-18%2017-39-50.png)
+- add all .coe files located in `vhdl/mem_init_files` making sure that the option to copy files is checked
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2d19bad0a49f139d057d9d5ee7a8a58d4310d15a/ip/Screenshot%20from%202023-06-04%2001-03-58.png)
+- at this point you can follow steps 3 to 6 in the `readme.txt` located in the `vhdl/` folder to add all the required IPs making sure to select the .coe files you just copied
+- once done you can go to `File Groups` and select `merge changes from file group wizard`
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2d19bad0a49f139d057d9d5ee7a8a58d4310d15a/ip/Screenshot%20from%202023-06-04%2001-01-32.png)
+  - at this point you might need to change the `type` field under `ip file group proprieties` of the folder `VHDL Simulation` to `simulation` instead of `VHDL:simulation`
+
+    ![]()
 - once you have added all IPs you can modify the vhdl file to include the core 
 - connect the core to the registers
   - the details of how to modify the IP to add the core can be found in the . folder
