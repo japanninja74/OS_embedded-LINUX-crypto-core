@@ -18,6 +18,8 @@ In order to communicate with a memory mapped device it's not sufficient to acces
 This is because the memory of the device is CPU-memory whereas the driver is in a limited part of kernel memory.  
 In order to link a piece of kernel memory to CPU-memory, use the following function:  
 ```console
-
+void __iomem * ioremap(BASE_ADDRESS, SIZE)
 ```
+`BASE_ADDRESS` of type `phys_address_t` being the base address of the core and `SIZE` of type `size_t` being the memory depth of the core in bytes (4 bytes for each register in the axi).  
+
 # EX3: Creating the Test Application
