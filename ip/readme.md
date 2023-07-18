@@ -1,3 +1,4 @@
+## Creating the IP
 - go to `tools>create and package new ip`
 - select next, select `create a new AXI4 peripheral`
 - name it `crypto_core_IP`
@@ -33,7 +34,7 @@
 - at this point you can save the changes by selecting `review and package > re-package IP`
 <br>
 You have successfully created the IP and can now create the core.
-
+## Creating the Block Diagram
 - once you have added all IPs you can modify the vhdl file to include the core 
 - connect the core to the registers
   - the details of how to modify the IP to add the core can be found in the . folder
