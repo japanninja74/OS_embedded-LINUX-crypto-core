@@ -40,3 +40,4 @@ NOTE: after booting onto the board the driver can be found in `/lib/modules/<dir
 In this exercise you are required to write a test application starting from a template that can be found under the `Templates` directory.  
 The application should do some cryptography operations on some data. The acutal functionality is up to you.  
 A good example is an application that takes a .txt file and either encrypts or decrypts it using a key.  
+NOTE: after booting onto the board the application can be found in `/usr/bin`.
