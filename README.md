@@ -199,3 +199,28 @@ NOTE: do not modify the names of the .c files. The apps and modules are compiled
 <br>
 
 # Booting and Testing
+At this point you should have an SD card with the linux image loaded into it.  
+- place the SD card into the slot on the PYNQ board
+- place the BOOT jumper on the pins labled `SD`
+  - if you are unsure about the BOOT selection, refer to the [PYNQ user manual](https://dpoauwgwqsy2x.cloudfront.net/Download/PYNQ_Z2_User_Manual_v1.1.pdf)
+- on a computer, open a terminal and install `MINICOM`:
+  ```console
+  sudo apt-get install minicom
+  ```
+  - please follow the instructions in `minicom_setup.md` to set up minicom
+- connect the PYNQ board using the provided USB cable
+- turn on the PYNQ board and run minicom:
+  ```console
+  sudo minicom
+  ```
+At this point you should see some text coming from the board describing the current state of the boot.  
+- when promped to login, use the default username `petalinux`
+  - you will be promped to set the password
+- at this point you can load the driver:
+  ```console
+  sudo insmod /lib/modules/<cartella>/extra/<driver_name>.ko
+  ```
+- and after that you can run your app:
+  ```console
+  sudo /usr/etc/<yourapp>
+  ```
