@@ -25,7 +25,7 @@ This function returns a pointer that is liked to the base address of the core an
 However, reading and writing to the registers needs to be an atomic operation, meaning that no interrupts can interrupt the reading or writing process.  
 In order to do so we need to use some specific macros: 
 ```console
-writel(VALUE, ADDRESS)
+void writel(VALUE, ADDRESS)
 ```
 ```console
 u32 readl(ADDRESS)
