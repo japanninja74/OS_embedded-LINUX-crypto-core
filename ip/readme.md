@@ -4,7 +4,9 @@
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/37948db52606f45b5e17723d4aa23545a7f579c7/ip/Screenshot%20from%202023-06-04%2000-59-53.png)
 - when promped to specify the AXI proprieties, change the number of registers to 5
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/7282e9dd73bcdb285fd12fccb9a02565a35a1cb0/ip/Screenshot%20from%202023-06-04%2001-00-10.png)
-- select `edit ip` and then `finish`
+- at this point we normally select `edit ip` but since vivado has some problems with the ip packager it's safer to select `add ip to repository`
+- go to `IP catalog`, open `User Repository > AXI Peripheral` and right click on the ip
+- select `Edit in IP Packager`
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/7282e9dd73bcdb285fd12fccb9a02565a35a1cb0/ip/Screenshot%20from%202023-06-04%2001-00-25.png)
 - add all files from the `vhdl/src/` folder as sources
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/7282e9dd73bcdb285fd12fccb9a02565a35a1cb0/ip/Screenshot%20from%202023-06-04%2001-01-00.png)
