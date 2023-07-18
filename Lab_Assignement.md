@@ -31,5 +31,6 @@ void writel(VALUE, ADDRESS)
 u32 readl(ADDRESS)
 ```
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
+All of these macros are defined in the `Linux/io.h` header file.  
 
 # EX3: Creating the Test Application
