@@ -33,4 +33,7 @@ u32 readl(ADDRESS)
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
 All of these macros are defined in the `Linux/io.h` header file.  
 
+In the `solutions` directory you can find our implementation. It's important to note that our implementation could not be working with your core because of different base addresses.  
+NOTE: after booting onto the board the driver can be found in `/lib/modules/<directory>/extra/` where `<directory>` is the only directory present in that path, the name is not known.  
+
 # EX3: Creating the Test Application
