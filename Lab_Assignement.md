@@ -25,7 +25,10 @@ This function returns a pointer that is liked to the base address of the core an
 However, reading and writing to the registers needs to be an atomic operation, meaning that no interrupts can interrupt the reading or writing process.  
 In order to do so we need to use some specific macros: 
 ```console
-u32 readl(ADDRESS) and void writel(VALUE, ADDRESS)
+writel(VALUE, ADDRESS)
+```
+```console
+u32 readl(ADDRESS)
 ```
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
 
