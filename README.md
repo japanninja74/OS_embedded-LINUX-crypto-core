@@ -116,7 +116,7 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 - click on the block diagram and select `create HDL wrapper`
 - click on . and select `generate bitstream`
 - click on . and select `export hardware platform`  
-
+<br>
 # Testing the hardware platform in baremetal  
 - open vitis and press `launch`
 - select `create application project`
@@ -127,8 +127,7 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 
 At this point you should have a basic hello world project open on vitis.  
 Please refer to the `Lab_Assignment.md` file for further information.  
-
-
+<br>
 # Creating the petalinux project
 - open a new terminal in the desktop
 - source the petalinux enviroment variables. Replace `<your petalinux install dir>` with the installion directory of the petalinux tool
@@ -162,7 +161,7 @@ Please refer to the `Lab_Assignment.md` file for further information.
 - click ok followed by exit unitil you can exit the configurator
 - make sure you click yes when promped to save and exit.
 - you have successfully created your petalinux project.
-
+<br>
 # Adding custom modules and applications
 In order to make the hw usable we will create a custom kernel module (acting as a driver) and a user application (acting as a test application).  
 This two pieces of software will be embedded into the linux image meaning that we will later be able to find them in the filesystem and run them.  
@@ -189,6 +188,8 @@ In order to create a new app or module:
 You can now find the apps and modules under the `PROGETTO/project-spec/meta-user/recipes-apps` and `PROGETTO/project-spec/meta-user/recipes-modules` directories.  
 Here you can modify the .c file related to the app/module to your liking.  
 NOTE: do not modify the names of the .c files. The apps and modules are compiled during the building of the image; in order to avoid having to build multiple times because of typos and programming mistakes, check if the .c files compile using gcc on your machine.  
-
+<br>
 # Building and Packaging
+<br>
+
 # Booting and Testing
