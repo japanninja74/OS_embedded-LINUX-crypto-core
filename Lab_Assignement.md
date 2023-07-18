@@ -20,6 +20,13 @@ In order to link a piece of kernel memory to CPU-memory, use the following funct
 ```console
 void __iomem * ioremap(BASE_ADDRESS, SIZE)
 ```
-`BASE_ADDRESS` of type `phys_address_t` being the base address of the core and `SIZE` of type `size_t` being the memory depth of the core in bytes (4 bytes for each register in the axi).  
+`BASE_ADDRESS` of type `phys_addr_t` being the base address of the core and `SIZE` of type `size_t` being the memory depth of the core in bytes (4 bytes for each register in the axi).  
+This function returns a pointer that is liked to the base address of the core and can be used to read and write to the registers.  
+However, reading and writing to the registers needs to be an atomic operation, meaning that no interrupts can interrupt the reading or writing process.  
+In order to do so we need to use some specific macros: 
+```console
+u32 readl(ADDRESS) and void writel(VALUE, ADDRESS)
+```
+Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
 
 # EX3: Creating the Test Application
