@@ -103,21 +103,7 @@ In the vhdl folder you can find everything you need to use the crypto core. Ther
 - when promped to select the default xilinx part go to `boards` and select the pynq-z2 board by tul.com
   - if you don't have the pynq-z2 board as a choice click on `refresh` and download the board  
 
-At this point you will need to add a custom IP to the IP Catalog which will be your HW core.  
-
-## Creating the IP from scratch
-Creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `ip` folder of this repository.  
-
-## Packaging the platform
-At this point you should see your IP in the IP Catalong under `user repository`:
-- create a new block diagram
-- add the `zynq7000` IP by selecting the `+` icon
-- add your custom IP the same way
-- an option should appear to run automated connections, click on it
-- at this point all blocks should result connected and some more blocks should have been created, namely the AXI interconnect and the clock/reset control block.
-- click on the block diagram and select `create HDL wrapper`
-- click on . and select `generate bitstream`
-- click on . and select `export hardware platform`  
+From this point on, creating the hardware platform is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `ip` folder of this repository.  
 <br>
 
 # Testing the hardware platform in baremetal  
