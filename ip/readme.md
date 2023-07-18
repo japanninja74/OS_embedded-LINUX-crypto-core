@@ -58,9 +58,24 @@ You have successfully created the IP. This should also close the IP Packager win
 - select `create block diagram` and then select `next`
   
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-05-50.png)
-- click on the `+` simbol to add the zynq7000 processing system
+- click on the `+` simbol to add the zynq7000 processing system by double clicking on it
 
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-06-14.png)
-- click on `run block automation`
+- click on `run block automation`, leave everything default and click `next`
 
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-07-08.png)
+- add the `crypto_core_ip` the same way you added the zynq 7000 and click on `run connection automation`
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/dfd8de012d409ffee206c68b925e58d6076ac7fd/ip/Screenshot%20from%202023-07-18%2019-14-13.png)
+- now go back to sources and right click on `design_1.db`
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/3d78bbe7c7bfa73b5463a1560f105a716493d4e0/ip/Screenshot%20from%202023-07-18%2019-16-45.png)
+- select `create HDL wrapper`, leave everything as default and press `ok`
+- when you are done you can generate the bitstream
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/be2f9b2620849e0cf8537f198617fffed57ab451/ip/Screenshot%20from%202023-07-18%2019-19-55.png)
+- then go to `file > export > export hardware`, make sure to include the bitstream and remember where you save the .xsa file because you will need it later
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/be2f9b2620849e0cf8537f198617fffed57ab451/ip/Screenshot%20from%202023-07-18%2019-21-58.png)
+
+You have successfully created the hardware platform.
