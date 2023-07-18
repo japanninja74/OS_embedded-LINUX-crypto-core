@@ -37,3 +37,6 @@ In the `solutions` directory you can find our implementation. It's important to 
 NOTE: after booting onto the board the driver can be found in `/lib/modules/<directory>/extra/` where `<directory>` is the only directory present in that path, the name is not known.  
 
 # EX3: Creating the Test Application
+In this exercise you are required to write a test application starting from a template that can be found under the `Templates` directory.  
+The application should do some cryptography operations on some data. The acutal functionality is up to you.  
+A good example is an application that takes a .txt file and either encrypts or decrypts it using a key.  
