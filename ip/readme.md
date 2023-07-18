@@ -32,6 +32,7 @@
 
     ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/291966de89f5ba5f61383092b6ec3028edc65840/ip/Screenshot%20from%202023-07-18%2018-42-48.png)
 now you can modify the vhdl file of the ip to insert the core as a component:
+
 ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/aa6f0f391c17ea67ab9e16d1b8039e1c6efc0466/ip/Screenshot%20from%202023-07-18%2018-52-41.png)
 - add the component in the vhdl description
 
