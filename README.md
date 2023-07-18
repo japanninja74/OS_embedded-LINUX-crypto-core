@@ -215,7 +215,7 @@ At this point you can build the linux image and package it onto an SD card:
   - this will create the image and file-system
 - at this point you can follow the instructions [here](https://docs.xilinx.com/r/2022.1-English/ug1144-petalinux-tools-reference-guide/Partitioning-and-Formatting-an-SD-Card) to correctly format and partition the SD card
 - copy `BOOT.BIN`, `image.ub` and `boot.scr` from `PROGETTO/images/linux` into the FAT32 partition
-- extract the `rootfs.tar.gz` archive from `PROGETTO/image/linux` into the ext4 partition`
+- extract the `rootfs.tar.gz` archive from `PROGETTO/image/linux` into the ext4 partition
 <br>
 
 # Booting and Testing
