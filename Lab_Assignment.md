@@ -13,16 +13,19 @@ When you're done creating the application create a new command shell console:
 Make sure you have turned on the board and that you have unplugged the boot jumper from the board, this will make the board ready for flashing.  
 At this point you can build the application and by clicking on the play icon.
 # EX2: Creating the Driver  
-In this exercise you are required to write a driver starting from a template that can be found under the `Templates` directory.  
+In this exercise you are required to write a driver starting from a template that can be found under the `Templates` directory. 
+  
 In order to communicate with a memory mapped device it's not sufficient to access memory using pointers, if you do this using the base address the driver with segfault.  
 This is because the memory of the device is CPU-memory whereas the driver is in a limited part of kernel memory.  
+  
 In order to link a piece of kernel memory to CPU-memory, use the following function:  
 ```console
 void __iomem * ioremap(BASE_ADDRESS, SIZE)
 ```
 `BASE_ADDRESS` of type `phys_addr_t` being the base address of the core and `SIZE` of type `size_t` being the memory depth of the core in bytes (4 bytes for each register in the axi).  
 This function returns a pointer that is liked to the base address of the core and can be used to read and write to the registers.  
-However, reading and writing to the registers needs to be an atomic operation, meaning that no interrupts can interrupt the reading or writing process.  
+  
+Reading and writing to the registers needs to be an atomic operation, meaning that no interrupts can interrupt the reading or writing process.  
 In order to do so we need to use some specific macros: 
 ```console
 void writel(VALUE, ADDRESS)
@@ -32,7 +35,7 @@ u32 readl(ADDRESS)
 ```
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
 All of these macros are defined in the `Linux/io.h` header file.  
-
+  
 In the `solutions` directory you can find our implementation. It's important to note that our implementation could not be working with your core because of different base addresses.  
 NOTE: after booting onto the board the driver can be found in `/lib/modules/<directory>/extra/` where `<directory>` is the only directory present in that path, the name is not known.  
 
