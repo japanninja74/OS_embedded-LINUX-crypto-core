@@ -192,6 +192,7 @@ In order to create a new app or module:
 
 You can now find the apps and modules under the `PROGETTO/project-spec/meta-user/recipes-apps` and `PROGETTO/project-spec/meta-user/recipes-modules` directories.  
 Here you can modify the .c file related to the app/module to your liking.  
+Please refer to the `Lab_Assignment.md` file for further information.  
 NOTE: do not modify the names of the .c files. The apps and modules are compiled during the building of the image; in order to avoid having to build multiple times because of typos and programming mistakes, check if the .c files compile using gcc on your machine.  
 <br>
 
