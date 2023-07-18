@@ -101,15 +101,10 @@ In the vhdl folder you can find everything you need to use the crypto core. Ther
 - when promped to select the default xilinx part go to `boards` and select the pynq-z2 board by tul.com
   - if you don't have the pynq-z2 board as a choice click on `refresh` and download the board  
 
-At this point you will need to add a custom IP to the IP Catalog which will be your HW core. If you wish you can add the pre-packaged IP located in the `ip/` folder or you can create your own from scratch:
-
-## Adding the pre-made IP
-- open the ip catalog
-- right click and select `add repository`
-- select the `ip/pre_packaged` folder
+At this point you will need to add a custom IP to the IP Catalog which will be your HW core.  
 
 ## Creating the IP from scratch
-Creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `/ip` folder.  
+Creating the IP from scratch is too convoluted to be explained on the main readme so another readme with a comprehensive step-by-step guide is located in the `ip` folder of this repository.  
 
 ## Packaging the platform
 At this point you should see your IP in the IP Catalong under `user repository`:
