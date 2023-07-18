@@ -31,9 +31,13 @@
   - at this point you might need to change the `type` field under `ip file group proprieties` of the folder `VHDL Simulation` to `simulation` instead of `VHDL:simulation`
 
     ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/291966de89f5ba5f61383092b6ec3028edc65840/ip/Screenshot%20from%202023-07-18%2018-42-48.png)
+    
+<br>
 now you can modify the vhdl file of the ip to insert the core as a component:
+<br>
 
 ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/aa6f0f391c17ea67ab9e16d1b8039e1c6efc0466/ip/Screenshot%20from%202023-07-18%2018-52-41.png)
+
 - add the component in the vhdl description
 
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/9a56a82d7d5cf33b83bece7871807cd9cb4ce254/ip/Screenshot%20from%202023-06-02%2021-16-31.png)
@@ -48,10 +52,7 @@ now you can modify the vhdl file of the ip to insert the core as a component:
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/9a56a82d7d5cf33b83bece7871807cd9cb4ce254/ip/Screenshot%20from%202023-06-02%2021-30-35.png)
 - at this point you can save the changes by selecting `review and package > re-package IP`
 <br>
-You have successfully created the IP and can now create the core.
+You have successfully created the IP.
 
 ## Creating the Block Diagram
-- once you have added all IPs you can modify the vhdl file to include the core 
-- connect the core to the registers
-  - the details of how to modify the IP to add the core can be found in the . folder
-- run a synthesis to save the design and create the netlist  
+
