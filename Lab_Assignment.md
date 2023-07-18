@@ -37,7 +37,7 @@ u32 readl(ADDRESS)
 Where `ADDRESS` is of type `void __iomem *` and `VALUE` is of type `u32`.  
 All of these macros are defined in the `Linux/io.h` header file. 
 <br>
-If you are unsure about the base address, you can find it in the Device Tree recipe for the core that can be located in `PROGETTO/components/plnx_workspace/device-tree/pl.dtsi`. This file is created after running `petalinux-build`, the base address is under the `reg` field.  
+If you are unsure about the base address, you can find it in the Device Tree recipe for the core that can be located in `PROGETTO/components/plnx_workspace/device-tree/device-tree/pl.dtsi`. This file is created after running `petalinux-build`, the base address is under the `reg` field.  
 <br>
 In the `solutions` directory you can find our implementation. It's important to note that our implementation could not be working with your core because of different base addresses.  
 NOTE: after booting onto the board the driver can be found in `/lib/modules/<directory>/extra/` where `<directory>` is the only directory present in that path, the name is not known.  
