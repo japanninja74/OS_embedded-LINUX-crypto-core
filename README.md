@@ -213,7 +213,7 @@ At this point you should have an SD card with the linux image loaded into it.
   ```console
   sudo minicom
   ```
-At this point you should see some text coming from the board describing the current state of the boot.  
+  - at this point you should see some text coming from the board describing the current state of the boot sequence.
 - when promped to login, use the default username `petalinux`
   - you will be promped to set the password
 - at this point you can load the driver:
