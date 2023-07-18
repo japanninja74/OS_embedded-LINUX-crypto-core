@@ -12,6 +12,8 @@ Pietro Furbatto
 Jessica Marossero  
 Filippo Marostica  
 Fabrizio Cavallone  
+<br>
+
 # GETTING STARTED
 ## pre-requisites
 In order to insure compatibility the following steps are required:  
@@ -117,6 +119,7 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 - click on . and select `generate bitstream`
 - click on . and select `export hardware platform`  
 <br>
+
 # Testing the hardware platform in baremetal  
 - open vitis and press `launch`
 - select `create application project`
@@ -128,6 +131,7 @@ At this point you should see your IP in the IP Catalong under `user repository`:
 At this point you should have a basic hello world project open on vitis.  
 Please refer to the `Lab_Assignment.md` file for further information.  
 <br>
+
 # Creating the petalinux project
 - open a new terminal in the desktop
 - source the petalinux enviroment variables. Replace `<your petalinux install dir>` with the installion directory of the petalinux tool
@@ -162,6 +166,7 @@ Please refer to the `Lab_Assignment.md` file for further information.
 - make sure you click yes when promped to save and exit.
 - you have successfully created your petalinux project.
 <br>
+
 # Adding custom modules and applications
 In order to make the hw usable we will create a custom kernel module (acting as a driver) and a user application (acting as a test application).  
 This two pieces of software will be embedded into the linux image meaning that we will later be able to find them in the filesystem and run them.  
