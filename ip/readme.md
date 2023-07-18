@@ -52,7 +52,15 @@ now you can modify the vhdl file of the ip to insert the core as a component:
   ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/9a56a82d7d5cf33b83bece7871807cd9cb4ce254/ip/Screenshot%20from%202023-06-02%2021-30-35.png)
 - at this point you can save the changes by selecting `review and package > re-package IP`
 <br>
-You have successfully created the IP.
+You have successfully created the IP. This should also close the IP Packager window and return to the original Vivado project.
 
 ## Creating the Block Diagram
+- select `create block diagram` and then select `next`
+  
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-05-50.png)
+- click on the `+` simbol to add the zynq7000 processing system
 
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-06-14.png)
+- click on `run block automation`
+
+  ![](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/blob/2cf9373336a6c958b23efe3bc1afad7fa51b49ec/ip/Screenshot%20from%202023-07-18%2019-07-08.png)
