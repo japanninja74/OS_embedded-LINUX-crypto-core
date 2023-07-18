@@ -196,6 +196,26 @@ NOTE: do not modify the names of the .c files. The apps and modules are compiled
 <br>
 
 # Building and Packaging
+At this point you can build the linux image and package it onto an SD card:
+- navigate to the project's directory
+- source the petalinux enviroment variables if you haven't done it already
+  ```console
+  source <your petalinux install dir>/settings.sh
+  ```
+- run the `petalinux-build` command
+  ```console
+  petalinux-build
+  ```
+  - this will take a long time and use a lot of disk space
+  - in this step your module and application will be cross-compiled, therefore any sintax error will terminate the build process
+- after building you can package the image using the `petalinux-package` command:
+  ```console
+  petalinux-package --boot --format BIN --u-boot --fsbl --fpga --force
+  ```
+  - this will create the image and file-system
+- at this point you can follow the instructions [here](https://docs.xilinx.com/r/2022.1-English/ug1144-petalinux-tools-reference-guide/Partitioning-and-Formatting-an-SD-Card) to correctly format and partition the SD card
+- copy `BOOT.BIN`, `image.ub` and `boot.scr` from `PROGETTO/images/linux` into the FAT32 partition
+- extract the `rootfs.tar.gz` archive from `PROGETTO/image/linux` into the ext4 partition`
 <br>
 
 # Booting and Testing
