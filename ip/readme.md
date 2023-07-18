@@ -1,7 +1,7 @@
 - go to `tools>create and package new ip`
 - select next, select `create a new AXI4 peripheral`
 - name it `crypto_core`
-  ![image](ip/Screenshot from 2023-06-04 00-59-53.png)
+  ![image](https://github.com/Giuseppe-La-Capra/embedded-LINUX-crypto-core/edit/master/ip/)
 - when promped to specify the AXI proprieties, change the number of registers to 5
 - select `edit ip` and then `finish`
 - add all files from the `vhdl/src/` folder as sources 
