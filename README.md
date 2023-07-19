@@ -14,6 +14,8 @@ Filippo Marostica
 Fabrizio Cavallone  
 <br>
 
+## sources
+DES core : 
 # GETTING STARTED
 ## pre-requisites
 In order to insure compatibility the following steps are required:  
