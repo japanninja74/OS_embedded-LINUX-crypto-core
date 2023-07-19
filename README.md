@@ -1,5 +1,5 @@
 # embedded-LINUX-crypto-core
-## introduction
+## Introduction
 This repo has been created by group #5 of the OS course.  
 This repo describes the complete workflow in order to get an embedded system working on the Pynq Z2, starting from complete scratch.  
 The flow is organized as a laboratory experience where you'll learn how to create,package and finally boot an embedded linux image that supports a custom hardware application.  
@@ -14,8 +14,14 @@ Filippo Marostica
 Fabrizio Cavallone  
 <br>
 
-## sources
-DES core : 
+## Sources
+DES core : Antonio de la Piedra on [Open Cores](https://opencores.org/projects/descore)  
+Xilinx user manuals: [vivado](https://docs.xilinx.com/r/en-US/ug949-vivado-design-methodology/Vivado-Design-Suite-User-and-Reference-Guides), [vitis](https://docs.xilinx.com/v/u/en-US/ug1416-vitis-documentation), [petalinux](https://docs.xilinx.com/r/en-US/ug1144-petalinux-tools-reference-guide)  
+[Xilinx forum](https://support.xilinx.com/s/topiccatalog?language=en_US)  
+[Xilinx embedded design tutorial](https://xilinx.github.io/Embedded-Design-Tutorials/docs/2022.2/build/html/docs/Introduction/Zynq7000-EDT/Zynq7000-EDT.html)  
+Linux resources: [bootlin embedded linux](https://bootlin.com/doc/training/embedded-linux/), [bootlin driver development](https://bootlin.com/doc/training/linux-kernel/), [kernel doc](https://docs.kernel.org/), [device tree doc](https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.4)  
+<br>
+
 # GETTING STARTED
 ## pre-requisites
 In order to insure compatibility the following steps are required:  
