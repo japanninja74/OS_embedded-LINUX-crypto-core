@@ -24,7 +24,7 @@
 -------------------------------------------           CORE IMPLEMENTATION NOTES           -------------------------------------------
 
 Whenever the core is ready, conversion starts when the start control bit is set to 1.
-Conversion is not stopped until it is done converting or a reset happens. IMPORTATANT: data and key should remain unchanged during conversion and should also be ready before start of conversion.
+Conversion is not stopped until it is done converting or a reset happens. IMPORTANT: data and key should remain unchanged during conversion and should also be ready before start of conversion.
 When the conversion is done, the output of the core wrapper remains unchanged and the done bit of the control output is asserted.
 If a second conversion is to be done the reload bit should be asserted followed by the start bit, provided that key and data are ready. 
 
