@@ -33,10 +33,11 @@ In order to insure compatibility the following steps are required:
 - once you have the BSP you will need to create the custom hardware platform in vivado using the provided VHDL files
 - after exporting the hardware platform, you will need to test the hardware in baremetal using vitis
 - you will then need to create a new petalinux project using the bsp and the hardware platform
+- you will then add a custom kernel module and a custom application
 - after that you will build the kernel
 - once you are done building you will need to package the boot components and load them into an sd card
-- after booting from the sd card and making sure that the linux image works correctly, you will be asked to create a custom linux driver
-- you will then be walked through the steps required to load the driver and test it using a custom user application
+- after booting from the sd card you will need to load the kernel module
+- you will then run the custom application to check the functionality of the core
 <br>
 
 # The pynq-z2 BSP
