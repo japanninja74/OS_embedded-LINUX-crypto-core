@@ -1,9 +1,7 @@
 # embedded-LINUX-crypto-core
-
-This material was originally developed as part of an assignment of the Operating Systems course delivered at Politecnico di Torino by Prof. Stefano Di Carlo and Prof. Alessio Carpegna.
-
+This material was originally developed as part of an assignment of the Operating Systems course delivered at Politecnico di Torino by Prof. Stefano Di Carlo and Prof. Alessio Carpegna.  
+This repo has been created by group #5 of the course.  
 ## Introduction
-This repo has been created by group #5 of the OS course.  
 This repo describes the complete workflow in order to get an embedded system working on the Pynq Z2, starting from complete scratch.  
 The flow is organized as a laboratory experience where you'll learn how to create,package and finally boot an embedded linux image that supports a custom hardware application.  
 <br>
