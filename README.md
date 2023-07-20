@@ -4,6 +4,7 @@ This repo has been created by group #5 of the course.
 
 ## Copyright
 This repository is licensed under CC-BY-4.0.
+
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-4.0&color=green)  
 <br>
 
