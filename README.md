@@ -248,3 +248,6 @@ At this point you should have an SD card with the linux image loaded into it.
   ```console
   sudo /usr/bin/<yourapp>
   ```
+> **Copyright**
+> This repo is copyright (c) 2023 of Giuseppe La Capra
+> This repo is additionally licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
