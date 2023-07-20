@@ -241,5 +241,5 @@ At this point you should have an SD card with the linux image loaded into it.
   ```
 - and after that you can run your app:
   ```console
-  sudo /usr/etc/<yourapp>
+  sudo /usr/bin/<yourapp>
   ```
