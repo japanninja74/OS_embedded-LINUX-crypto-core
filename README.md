@@ -1,6 +1,9 @@
 # embedded-LINUX-crypto-core
 This material was originally developed as part of an assignment of the Operating Systems course delivered at Politecnico di Torino by Prof. Stefano Di Carlo and Prof. Alessio Carpegna.  
 This repo has been created by group #5 of the course.  
+
+## Copyright
+This repository is licensed under CC-BY-4.0.
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-4.0&color=green)  
 <br>
 
