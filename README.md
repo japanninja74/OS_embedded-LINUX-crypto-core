@@ -22,6 +22,12 @@ Filippo Marostica
 Fabrizio Cavallone  
 <br>
 
+**Reviewers**
+This material was reviewed by:
+[Francesco Corvaglia](https://github.com/ElCeqo)
+[Niccolò Lentini](https://github.com/niccolentini)
+[Amalia Vittoria Montemurro](https://github.com/amaliamon)
+
 ## Sources
 DES core : Antonio de la Piedra on [Open Cores](https://opencores.org/projects/descore)  
 Xilinx user manuals: [vivado](https://docs.xilinx.com/r/en-US/ug949-vivado-design-methodology/Vivado-Design-Suite-User-and-Reference-Guides), [vitis](https://docs.xilinx.com/v/u/en-US/ug1416-vitis-documentation), [petalinux](https://docs.xilinx.com/r/en-US/ug1144-petalinux-tools-reference-guide)  
