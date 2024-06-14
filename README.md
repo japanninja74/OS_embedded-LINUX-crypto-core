@@ -24,9 +24,9 @@ Fabrizio Cavallone
 
 **Reviewers:**
 
-[Francesco Corvaglia](https://github.com/ElCeqo)
-[Niccolò Lentini](https://github.com/niccolentini)
-[Amalia Vittoria Montemurro](https://github.com/amaliamon)
+[Francesco Corvaglia](https://github.com/ElCeqo) <br>
+[Niccolò Lentini](https://github.com/niccolentini) <br>
+[Amalia Vittoria Montemurro](https://github.com/amaliamon) <br>
 
 ## Sources
 DES core : Antonio de la Piedra on [Open Cores](https://opencores.org/projects/descore)  
